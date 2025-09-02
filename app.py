@@ -22,7 +22,7 @@ def send_message(chat_id, text):
     """Kirim balasan ke Telegram (opsional)."""
     if not BOT_TOKEN or not chat_id:
         return
-    url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
+    url = f"https://api.telegram.org/bot7411297347:AAGfiR6tVSY8vMNmI62UK_GA6fgvxEYLC9g/sendMessage"
     try:
         requests.post(url, json={"chat_id": chat_id, "text": text}, timeout=3)
     except Exception:
